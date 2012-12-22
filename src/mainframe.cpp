@@ -145,7 +145,7 @@ void MainFrame::OnImport( wxCommandEvent& event )
 
     enum type {isNumber=100, isArray};
 
-    wxExecute(_("bash -e scripts/clean.sh ") + input_file,wxEXEC_ASYNC); // CLEAN UP PROCESS
+    wxExecute(_("clean.sh ") + input_file,wxEXEC_ASYNC); // CLEAN UP PROCESS
 
 
 

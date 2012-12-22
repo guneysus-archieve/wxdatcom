@@ -1,0 +1,90 @@
+*
+* Boeing 737,from Datcom Plotting Report 19830012662_1983012662.0pdf
+* page 9 for this file,page 48-49 for pictures of what they drew.
+*
+* Entered by Bill Galbraith.
+*
+* Note that this model has NOT been verified to be correct.
+* Verified that it matches what is in the report.
+* The report has very long engines,probably a default length.
+* 737 engines are really only about 7.075 feet long.
+*
+*
+************************
+* List of Command Card
+************************
+DIM FT
+DAMP
+DERIV RAD
+PART
+
+
+********************** 
+* Flight Conditions *
+**********************
+* $FLTCON WT=115000.00$ Removed for compatibility with Matlab
+
+ $FLTCON NMACH=1.00,MACH(1)=0.2,NALT=1.0,ALT(1)=1500.0,NALPHA=20.00,
+ ALSCHD(1)=-16.00,-8.00,-6.00,-4.00,-2.00,0.00,2.00,4.00,8.00,9.00,10.00,12.00,14.00,16.00,18.00,19.00,20.00,21.00,22.00,24.00,GAMMA=0.0,LOOP=2.00,RNNUB(1)=20120887.00$
+
+
+************************* 
+* Reference Parameters * pg 29
+*************************
+ $OPTINS BLREF=93.00,SREF=1329.09,CBARR=14.03$
+
+
+**************************************
+* Group II Synthesis Parameters * page 33
+**************************************
+ $SYNTHS XW=28.03,ZW=-1.04,ALIW=1.00,XCG=41.03,ZCG=0.00,XH=76.06,ZH=6.02,XV=71.01,ZV=7.06,XVF=66.02,ZVF=13.01,VERTUP=.TRUE.$
+
+
+********************************** 
+* Body Configuration Parameters * page 36
+**********************************
+ $BODY NX=14.0,BNOSE=2.0,BTAIL=2.0,BLA=20.00,X(1)=0.0,1.038,4.083,6.090,8.097,13.08,27.06,55.02,65.06,69.00,75.09,82.08,89.07,90.04,ZU(1)=0.69,2.007,3.045,4.038,5.087,6.090,8.028,8.028,8.028,8.028,7.094,7.059,7.050,6.09,ZL(1)=-0.035,-1.073,-3.045,-3.080,-4.014,-4.049,-4.083,-4.083,-3.045,-2.076,-0.081,1.004,4.014,6.021 * Commented out by WAG,as DATCOM complained it was too much data.
+* R(1)=0.34,1.038,2.076,3.045,4.014,5.018,6.021,6.021 * 5.087,5.052,4.014,2.076,0.69,0.00,S(1)=0.55,8.023,28.089,44.031,65.006,92.063,127.081,127.081,108.011,95.068,56.088,28.039,3.064,0.011$
+
+
+
+**********************************
+* Wing planform variables pg 37-38
+**********************************
+ $WGPLNF CHRDR=23.08,CHRDTP=4.08,CHRDBP=12.04,SSPN=46.09,SSPNOP=31.01,SSPNE=40.00,CHSTAT=0.25,TWISTA=0.0,TYPE=1.0,SAVSI=29.0,SAVSO=26.00,DHDADI=0.0,DHDADO=4.0$
+
+
+*********************************
+* Jet Power Effects parameters pg 51
+*********************************
+ $JETPWR AIETLJ=-2.00,AMBSTP=2116.08,AMBTMP=59.07,JEALOC=42.025,
+ JEALOC=58.00,JELLOC=15.09,JERAD=2.0065,JEVLOC=-5.02,
+ JIALOC=34.05,JINLTA=13.04,NENGSJ=2.00,THSTCJ=0.00,JEANGL=-2.00$
+
+
+******************************************
+* Vertical Tail planform variables pg 37-38
+******************************************
+ $VTPLNF CHRDR=15.09,CHRDTP=4.08,SAVSI=33.0,SSPN=27.06,SSPNOP=0.0,SSPNE=20.07,CHSTAT=0.25,TWISTA=0.0,TYPE=1.0$
+
+
+*********************************************
+* Horizontal Tail planform variables pg 37-38
+*********************************************
+ $HTPLNF CHRDR=12.04,CHRDTP=4.01,SSPN=17.06,SSPNE=15.087,CHSTAT=0.25,TWISTA=0.0,TYPE=1.0,SAVSI=31.0,DHDADI=9.0$
+
+
+******************************************
+* Symetrical Flap Deflection parameters
+******************************************
+ $SYMFLP FTYPE=1.0,NDELTA=9.0,DELTA(1)=-40.0,-30.0,-20.0,-10.0,0.0,10.0,20.0,30.0,40.0,SPANFI=0.0,SPANFO=14.0,CHRDFI=1.072,CHRDFO=1.072,NTYPE=1.00,CB=0.50,TC=0.44,PHETE=0.003,PHETEP=0.002$
+
+
+**********************************************
+* Wing Sectional Characteristics Parameters *
+**********************************************
+NACA-W-4-0012-25
+NACA-H-4-0012-25
+NACA-V-4-0012-25
+
+CASEID TOTAL: Boeing B-737

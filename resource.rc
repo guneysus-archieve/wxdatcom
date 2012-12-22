@@ -1,0 +1,12 @@
+datcom ICON "resource/datcom.ico"
+aircraft ICON "resource/ac3dview.ico"
+
+jiff ICON "resource/jiff.ico"
+lfiplot ICON "resource/lfiplot.ico"
+
+gnu ICON "resource/gnu.ico"
+gnusin ICON "resource/gnusin.ico"
+
+
+aaaa ICON "resource/datcom.ico"
+#include "wx/msw/wx.rc"

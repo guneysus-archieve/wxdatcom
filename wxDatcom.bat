@@ -1,7 +1,7 @@
 @ECHO OFF
 echo %~dp0
 
-SET PATH=%windir%\system32;%~dp0bin;%~dp0scripts;%~dp0cyg_min\bin;%~dp0editor;%~dp0gnuplot\bin;
+SET PATH=%windir%\system32;%~dp0bin;%~dp0scripts;%~dp0cygwin\bin;%~dp0editor;%~dp0gnuplot\bin;
 
 echo ---------------------------------------------
 echo PATH 

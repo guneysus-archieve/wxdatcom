@@ -12,4 +12,4 @@
  * Run Datcom / Plot Results
  * About Menu
  
-[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/942a12e4cf229b53fb8170bb94e048b8 "githalytics.com")](http://githalytics.com/github.com/guneysus/wxdatcom)
+[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/9b8e5a840bef89fb146fd7f8a143c42a "githalytics.com")](http://githalytics.com/guneysus/wxdatcom)
